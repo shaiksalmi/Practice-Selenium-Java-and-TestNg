@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Retry Failure Test Suite" verbose="1" >
+
+<listeners>
+
+<listener class-name="RetryLogic.MyTransform"/>
+
+</listeners>
+
+  <test name="Different Testing Feature Test" >
+  
+    <classes>
+     
+       
+        <class name="com.RetryLogic.MyTest1" />
+        
+        
+       
+         
+    </classes>
+  </test>
+
+ 
+</suite>

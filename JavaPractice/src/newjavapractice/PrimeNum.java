@@ -1,0 +1,56 @@
+package newjavapractice;
+
+public class PrimeNum {
+
+	public static boolean ItsPrimeNumber(int num)
+	{
+		if(num<=1) {
+			
+			return false;
+			
+		}
+		for(int i=2; i<num; i++) {
+			
+			if(num % i == 0) {
+				
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+public static void getPrimeNumbers(int num) {
+		
+		
+		for(int i=2; i<=num; i++) {
+			
+			if(ItsPrimeNumber(i))
+				
+				System.out.print(i + " ");
+			
+			
+			
+			
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println("2 is prime number: "+ ItsPrimeNumber(2));
+		
+		System.out.println(ItsPrimeNumber(3));
+		
+		System.out.println(ItsPrimeNumber(10));
+		
+		getPrimeNumbers(13);
+		
+	}
+	
+	
+	
+	
+	
+
+}
